@@ -1,0 +1,68 @@
+title: silen | 源之于生活
+name: silen
+email: silenme@gmail.com
+description: silen
+keywords: silen
+skill_keywords: [PHP, Javascript, HTML+CSS, Linux, Laravel, Git, Mac, Thinkphp, Stackoverflow]
+
+timezone:    PRC
+encoding: "utf-8"
+
+#url: http://silen.com.cn
+url: http://127.0.0.1:4000
+baseurl:  "/"
+domain:    silen.com.cn
+permalink:     /a/:year/:month/:title.html
+paginate: 5
+paginate_path: "page:num"
+source_code: https://github.com/silen/silen.github.io
+
+# Build settings
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  #enable_coderay: true
+
+gems:
+  #- jemoji
+  #- rouge
+  # # # - jekyll-mentions
+  # - jekyll-sitemap
+  #- jekyll-html-pipeline
+
+disqus:
+  id: silen
+
+google:
+    analytics_id: UA-55452630-1
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
+contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']
