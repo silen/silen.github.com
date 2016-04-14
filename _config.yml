@@ -64,5 +64,5 @@ navs:
     href: /about
     label: About
 
-popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
-contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']
+popular_repos: ['']
+contribute_repos: ['']
