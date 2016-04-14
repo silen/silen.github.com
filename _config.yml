@@ -60,5 +60,5 @@ navs:
     href: /about
     label: About
 
-popular_repos: ['']
-contribute_repos: ['']
+popular_repos: []
+contribute_repos: []
