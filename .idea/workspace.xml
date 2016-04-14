@@ -62,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-04-14-work-log.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-04-14-work-log.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-04-14-work-log.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="66" column="13" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="13" />
+            <state relative-caret-position="659">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,9 +137,9 @@
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/open-source.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/sidebar-popular-repo.html" />
         <option value="$PROJECT_DIR$/_posts/2016-04-14-work-log.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -290,12 +290,12 @@
       <option name="presentableId" value="Default" />
       <updated>1460519691925</updated>
       <workItem from="1460519693017" duration="6739000" />
-      <workItem from="1460597831131" duration="180000" />
+      <workItem from="1460597831131" duration="262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6919000" />
+    <option name="totallyTimeSpent" value="7001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -555,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/sidebar-contribute-repo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -599,6 +591,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
