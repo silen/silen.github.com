@@ -5,7 +5,7 @@ title: php_curl_访问本地环境
 
 
 
-[code]
+```
 /**
      * POST 请求
      * @param string $url
@@ -48,5 +48,5 @@ title: php_curl_访问本地环境
             return false;
         }
     }
-[/code]
+```
 
