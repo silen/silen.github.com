@@ -62,21 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="476">
+              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="67" column="9" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="9" />
+            <state relative-caret-position="812">
+              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -101,8 +101,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-05-04-curl-localost.md" />
         <option value="$PROJECT_DIR$/_posts/2016-05-05-ihuacheng-api.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/api.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -269,12 +269,12 @@
       <updated>1460519691925</updated>
       <workItem from="1460519693017" duration="6739000" />
       <workItem from="1460597831131" duration="638000" />
-      <workItem from="1462350560065" duration="1968000" />
+      <workItem from="1462350560065" duration="2045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9345000" />
+    <option name="totallyTimeSpent" value="9422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -607,18 +607,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_layouts/api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="67" column="9" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="9" />
+        <state relative-caret-position="476">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/api.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="812">
+          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding />
         </state>
       </provider>

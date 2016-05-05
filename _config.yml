@@ -64,26 +64,26 @@ popular_repos: []
 contribute_repos: []
 api_user:
   -
-    href: #login
+    href: /a/2016/05/ihuacheng-api.html#login
     label: 登录
 
   -
-    href: #register
+    href: /a/2016/05/ihuacheng-api.html#register
     label: 注册
 
   -
-    href: #password
+    href: /a/2016/05/ihuacheng-api.html#password
     label: 修改密码
 
   -
-    href: #forgetPassword
+    href: /a/2016/05/ihuacheng-api.html#forgetPassword
     label: 忘记密码
 
   -
-    href: #sendMobile
+    href: /a/2016/05/ihuacheng-api.html#sendMobile
     label: 手机验证码
   -
-    href: #updateNickName
+    href: /a/2016/05/ihuacheng-api.html#updateNickName
     label: 修改昵称
 
 
