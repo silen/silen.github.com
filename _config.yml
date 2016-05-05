@@ -62,3 +62,28 @@ navs:
 
 popular_repos: []
 contribute_repos: []
+api_user:
+  -
+    href: #login
+    label: 登录
+
+  -
+    href: #register
+    label: 注册
+
+  -
+    href: #password
+    label: 修改密码
+
+  -
+    href: #forgetPassword
+    label: 忘记密码
+
+  -
+    href: #sendMobile
+    label: 手机验证码
+  -
+    href: #updateNickName
+    label: 修改昵称
+
+
