@@ -4,7 +4,7 @@ title: ihuacheng api
 ---
 
 
-<a name="login"></a>
+
 ##登录
 /index.php?m=apic=user&a=updateNickName
 
