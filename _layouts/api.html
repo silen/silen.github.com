@@ -24,6 +24,8 @@ layout: default
  <section class="container content">
     <div class="columns">
         <div class="column one-fourth">
+            <div class="boxed-group flush" role="navigation">
+                <h3>用户类</h3>
             <ul class="boxed-group-inner mini-repo-list">
                 {% for repo in site.api_user %}
                 <li class="public source ">
@@ -36,6 +38,7 @@ layout: default
                 </li>
                 {% endfor %}
             </ul>
+            </div>
         </div>
         <div class="column three-fourths" >
             <article class="article-content markdown-body">
