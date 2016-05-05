@@ -86,4 +86,32 @@ api_user:
     href: /a/2016/05/ihuacheng-api.html#updateNickName
     label: 修改昵称
 
+api_book:
+  -
+    href: /a/2016/05/ihuacheng-api.html#category
+    label: 获取栏目
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#book_index
+    label: 获取作品列表
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#show
+    label: 获取单篇作品
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#book_comment
+    label: 作品评价
+
+api_author:
+  -
+    href: /a/2016/05/ihuacheng-api.html#author_index
+    label: 作者信息
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#book
+    label: 作者作品
+
+
+
 

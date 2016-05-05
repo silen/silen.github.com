@@ -40,6 +40,40 @@ layout: default
             </ul>
             </div>
         </div>
+        <div class="column one-fourth">
+            <div class="boxed-group flush" role="navigation">
+                <h3>作品类</h3>
+                <ul class="boxed-group-inner mini-repo-list">
+                    {% for repo in site.api_book %}
+                    <li class="public source ">
+                        <a href="{{ repo.href }}" title="{{ repo.label }}" class="mini-repo-list-item css-truncate">
+                            <span class="repo-icon octicon octicon-repo"></span>
+                <span class="repo-and-owner css-truncate-target">
+                    {{ repo.label }}
+                </span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="column one-fourth">
+            <div class="boxed-group flush" role="navigation">
+                <h3>作者</h3>
+                <ul class="boxed-group-inner mini-repo-list">
+                    {% for repo in site.api_author %}
+                    <li class="public source ">
+                        <a href="{{ repo.href }}" title="{{ repo.label }}" class="mini-repo-list-item css-truncate">
+                            <span class="repo-icon octicon octicon-repo"></span>
+                <span class="repo-and-owner css-truncate-target">
+                    {{ repo.label }}
+                </span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
         <div class="column three-fourths" >
             <article class="article-content markdown-body">
                 {{ content }}
