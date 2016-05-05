@@ -1,7 +1,8 @@
 
 ### 登录
 ---
-/index.php?m=apic=user&a=updateNickName
+<a name="login"></a>
+/index.php?m=apic=user&a=login
 
 http请求方式: POS
 
@@ -14,14 +15,165 @@ http请求方式: POS
 
 ```
 {
-"status":1,
-"member":
-{
-"nickname":"silen",
-"openid":"oyh77skAEgtPUKGaOqiD14N9Rou8",
-"systemid":"264",
-"subscribe":"1",
-"headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/JceeNIg7n5947ZgnNdWciae5M6GQ5d27dDmHUE4wyxq4KFVEJM10f4TPibUmVAr2XvNzkPq93rwojL6Jcx8B28xHwRb0xNevTs\/0"
+    "status": 0,
+    "error": "no access",
+    "info": {
+        "uid": "",
+        "nickname": "",
+        "sex": "0",
+        "birthday": "",
+        "qq": "",
+        "score": "0",
+        "login": "0",
+        "reg_ip": "",
+        "reg_time": "",
+        "last_login_ip": "0",
+        "last_login_time": "0",
+        "headerimg": "0",
+        "is_author": "0",
+        "is_c_email": "0",
+        "follow_num": "0",
+        "be_follow_num": "0",
+        "address": null,
+        "avatar": "/res/static/default_headerimg.png",
+        "pk": ""
+    },
+    "action": "error"
 }
+```
+
+
+
+### 注册
+---
+<a name="register"></a>
+/index.php?m=apic=user&a=register
+
+http请求方式: POS
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|username| 是 | 用户名
+|password| 是 | 密码
+|verify| 是 | 手机验证码 -> 调取  sendMobile()
+
+
+```
+{
+    "status": 0,
+    "error": "注册成功",
+    "info": {
+
+    },
+    "action": "error"
+}
+```
+
+
+### 修改密码
+---
+<a name="password"></a>
+/index.php?m=apic=user&a=password
+
+http请求方式: POS
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|oldpassword| 是 | 旧密码
+|password| 是 | 新密码
+
+
+
+```
+{
+    "status": 0,
+    "error": "修改成功",
+    "info": {
+
+    },
+    "action": "error"
+}
+```
+
+
+### 找回密码
+---
+<a name="forgetPassword"></a>
+/index.php?m=apic=user&a=forgetPassword
+
+http请求方式: POS
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|mobile| 是 | 登录的手机号
+|password| 是 | 密码
+|verify| 是 | 手机验证码 -> 调取  sendMobile()
+
+
+
+```
+{
+    "status": 0,
+    "error": "修改成功",
+    "info": {
+
+    },
+    "action": "error"
+}
+```
+
+### 发送注册验证码
+---
+<a name="sendMobile"></a>
+/index.php?m=apic=user&a=sendMobile
+
+http请求方式: POS
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|mobile| 是 | 登录的手机号
+|type| 否 | 默认 注册验证码 1. 找回密码的验证码
+
+
+```
+{
+    "status": 0,
+    "error": "发送成功",
+    "info": {
+
+    },
+    "action": "error"
+}
+```
+
+
+### 修改昵称
+---
+<a name="updateNickName"></a>
+/index.php?m=apic=user&a=updateNickName
+
+http请求方式: POS
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|nickname| 是 | 昵称
+
+
+
+```
+{
+    "status": 0,
+    "error": "修改成功",
+    "info": {
+
+    },
+    "action": "error"
 }
 ```
