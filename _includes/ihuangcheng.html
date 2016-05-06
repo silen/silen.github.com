@@ -22,22 +22,6 @@ http请求方式: POST
     "info": {
         "uid": "",
         "nickname": "",
-        "sex": "0",
-        "birthday": "",
-        "qq": "",
-        "score": "0",
-        "login": "0",
-        "reg_ip": "",
-        "reg_time": "",
-        "last_login_ip": "0",
-        "last_login_time": "0",
-        "headerimg": "0",
-        "is_author": "0",
-        "is_c_email": "0",
-        "follow_num": "0",
-        "be_follow_num": "0",
-        "address": null,
-        "avatar": "/res/static/default_headerimg.png",
         "pk": ""
     },
     "action": "error"
@@ -452,5 +436,443 @@ http请求方式: GET
     }
 }
 ```
+
+## 个人中心
+
+<a name="member_index"></a>
+
+### 用户信息
+---
+/index.php?m=api&c=member&a=index
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "uid": "",
+        "nickname": "",
+        "sex": "0",
+        "birthday": "0000-00-00",
+        "qq": "",
+        "score": "积分",
+        "balance": "余额",
+        "login": "17",
+        "reg_ip": "1039297748",
+        "reg_time": "1460358821",
+        "last_login_ip": "2130706433",
+        "last_login_time": "1462254209",
+        "status": "1",
+        "headerimg": "0",
+        "is_admin": "0",
+        "is_author": "0",
+        "is_c_email": "0",
+        "follow_num": "0",
+        "be_follow_num": "0",
+        "sign": null,
+        "address": null,
+        "avatar": "/res/static/default_headerimg.png"
+    }
+}
+```
+
+
+<a name="favorites"></a>
+
+### 收藏
+---
+/index.php?m=api&c=member&a=favorites
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+            "id": "38",
+            "title": "红高粱",
+            "sub_title": "",
+            "top_cate_id": "1",
+            "cate_id": "7",
+            "cover_id": "108",
+            "content": "",
+            "is_free": "1",
+            "cose_price": "15.00",
+            "sell_price": "15.00",
+            "score": "3",
+            "is_end": "0",
+            "create_time": "1458699645",
+            "update_time": "1458699645",
+            "tags": "莫言 红高粱 当代文学",
+            "num": "3",
+            "form": "3",
+            "works_kind": "3",
+            "is_fiction": "1",
+            "is_original": "1",
+            "original_data": "",
+            "sh_time": "0",
+            "position": "1",
+            "sell_num": "0",
+            "comment_num": "2",
+            "is_sale": "0",
+            "score_num": "2",
+            "read_num": "0",
+            "collect_num": "4",
+            "is_publish": "1",
+            "press": "花城出版社",
+            "copyright": "花城出版社",
+            "publish_price": "15.00",
+            "publish_time": "2012年10月",
+            "type_id": "0",
+            "author": "莫言",
+            "is_first": "1",
+            "is_style": "0",
+            "author_content": null,
+            }
+        ],
+        "count": "1"
+    }
+}
+```
+
+
+<a name="order"></a>
+
+### 订单
+---
+/index.php?m=api&c=member&a=order
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+                "id": "4",
+                "order_sn": "a160415105109966",
+                "uid": "1211",
+                "pay_type": "1",
+                "pay_status": "1 未付款 2 已付款",
+                "status": "1 新订单，2已取消，3已完成(交易成功)，4已关闭",
+                "pay_money": "0.99",
+                "type": null,
+                "remark": null,
+                "create_time": "1460688669",
+                "update_time": "1460688669",
+                "detail": [
+                    {
+                        "id": "5",
+                        "uid": "48",
+                        "order_sn": "a160415105109966",
+                        "title": "造园的人",
+                        "d_id": "28",
+                        "num": "1",
+                        "price": "0.99",
+                        "setting": null,
+                        "create_time": "1460688669"
+                    }
+                ]
+            }
+        ],
+        "count": "3"
+    }
+}
+```
+
+<a name="oderDetail"></a>
+
+### 订单详情
+---
+/index.php?m=api&c=member&a=oderDetail
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|orderSn| 是 | 订单号
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "id": "4",
+        "order_sn": "a160415105109966",
+        "uid": "1211",
+        "pay_type": "1",
+        "pay_status": "2",
+        "status": "3",
+        "pay_money": "0.99",
+        "type": null,
+        "remark": null,
+        "create_time": "1460688669",
+        "update_time": "1460688669",
+        "detail": [
+            {
+            "id": "5",
+            "uid": "48",
+            "order_sn": "a160415105109966",
+            "title": "造园的人",
+            "d_id": "28",
+            "num": "1",
+            "price": "0.99",
+            "setting": null,
+            "create_time": "1460688669"
+            }
+        ]
+    }
+}
+```
+
+
+
+<a name="notice"></a>
+
+### 通知
+---
+/index.php?m=api&c=member&a=notice
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+                "id": "1",
+                "uid": "1211",
+                "title": "DXVX",
+                "content": "23112312",
+                "status": "1 未读 2 已读",
+                "create_time": "0",
+                "update_time": "0"
+            }
+        ],
+        "count": "1"
+    }
+}
+```
+
+<a name="noticeDetail"></a>
+
+### 通知详情
+---
+/index.php?m=api&c=member&a=noticeDetail
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|id| 是 | 通知id
+
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "id": "1",
+        "uid": "1211",
+        "title": "DXVX",
+        "content": "23112312",
+        "status": "1",
+        "create_time": "0",
+        "update_time": "0"
+    }
+}
+```
+
+
+<a name="noticeRead"></a>
+
+### 读取通知
+---
+/index.php?m=api&c=member&a=noticeRead
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|id| 是 | 通知id
+
+
+<a name="account"></a>
+
+### 充值
+---
+/index.php?m=api&c=member&a=account
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|money| 是 | 需要充值的金额
+
+```
+{
+    "status": 0,
+    "action": "not money",
+    "error": "充值成功",
+    "info": []
+}
+```
+<a name="accountLog"></a>
+
+### 充值记录
+---
+/index.php?m=api&c=member&a=accountLog
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+                "id": "6",
+                "uid": "1211",
+                "money": "1.00",
+                "action": "1",
+                "action_sn": "",
+                "type": "recharge",
+                "create_time": "1462502270"
+            }
+        ],
+        "count": "1"
+    }
+}
+```
+
+<a name="consumeLog"></a>
+
+### 消费记录
+---
+/index.php?m=api&c=member&a=consumeLog
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+                "id": "6",
+                "uid": "1211",
+                "money": "1.00",
+                "action": "1",
+                "action_sn": "",
+                "type": "buy",
+                "create_time": "1462502270"
+            }
+        ],
+        "count": "1"
+    }
+}
+```
+<a name="remind"></a>
+
+### 提醒
+---
+/index.php?m=api&c=member&a=remind
+
+http请求方式: post
+
+| 参数        | 是否必填        |  说明 |
+| ------------- |:-------------|:-------------|
+|token| 是 | 验证token
+|pk| 是 | 登录后返回的pk
+|page| 否 | 页码 默认 1
+|size| 否 | 每页数量 默认 10
+```
+{
+    "status": 0,
+    "action": "",
+    "error": "no access",
+    "info": {
+        "data": [
+            {
+                "id": "6",
+                "uid": "1211",
+                "content": "成功充值1元",
+                "create_time": "1462502270"
+            }
+        ],
+        "count": "1"
+    }
+}
+```
+
+
+
+
+
 
 

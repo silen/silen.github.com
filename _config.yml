@@ -112,6 +112,53 @@ api_author:
     href: /a/2016/05/ihuacheng-api.html#book
     label: 作者作品
 
+api_member:
+  -
+    href: /a/2016/05/ihuacheng-api.html#member_index
+    label: 用户信息
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#favorites
+    label: 收藏
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#order
+    label: 订单
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#oderDetail
+    label: 订单详情
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#notice
+    label: 通知
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#noticeDetail
+    label: 通知详情
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#noticeRead
+    label: 读取通知
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#account
+    label: 充值
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#accountLog
+    label: 充值记录
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#consumeLog
+    label: 消费记录
+
+  -
+    href: /a/2016/05/ihuacheng-api.html#remind
+    label: 提醒
+
+
+
 
 
 
