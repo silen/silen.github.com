@@ -11,7 +11,7 @@ encoding: "utf-8"
 url: http://git.silen.com.cn
 #url: http://127.0.0.1:4000
 baseurl:  "/"
-domain:    silen.com.cn
+domain:    git.silen.com.cn
 permalink:     /a/:year/:month/:title.html
 paginate: 5
 paginate_path: "page:num"
